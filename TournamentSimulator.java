@@ -1,0 +1,85 @@
+
+public class TournamentSimulator {
+    public static void main(String[] args) {
+        Tournament ucl = new Tournament("UEFA Champions League");
+        Team fcBarcelona = new Team("FC Barcelona", 95, 90, 90);
+        Team realMadridFC = new Team("Real Madrid CF", 93, 90, 91);
+        Team valenciaFC = new Team("Valencia CF", 86, 82, 84);
+        Team bayernFC = new Team("FC Bayern", 88, 87, 88);
+        Team astonVilla = new Team("Aston Villa FC", 94, 84, 84);
+        Team psg = new Team("Paris Saint German", 91, 89, 88);
+        Team interMilan = new Team("Inter Milan FC", 87, 92, 89);
+        Team arsenal = new Team("Arsenal FC", 88, 89, 84);
+        Team bDortmund = new Team("Borussia Dortmund", 89, 84, 91);
+        Team atleticoMadrid = new Team("Atletico de Madrid", 92, 89, 89);
+        Team benfica = new Team("Benfica", 84, 82, 85);
+        Team feyenoord = new Team("Feyenoord", 82, 83, 85);
+        Team leverkusen = new Team("Leverkusen", 82, 84, 86);
+        Team lille = new Team("Lille", 85, 86, 82);
+        Team liverpool = new Team("Liverpool", 92, 88, 90);
+        Team psv = new Team("PSV", 81, 84, 85);
+        Team atalanta = new Team("Atalanta FC", 83, 86, 87);
+        Team brest = new Team("Brest", 81, 83, 85);
+        Team celtic = new Team("Celtic", 84, 84, 87);
+        Team juventus = new Team("Juventus FC", 91, 88, 88);
+        Team manCity = new Team("Manchester City", 92, 89, 90);
+        Team acMilan = new Team("AC Milan", 87, 88, 87);
+        Team monaco = new Team("Monaco", 84, 86, 84);
+        Team sportingCP = new Team("Sporting CP", 82, 81, 86);
+        Team bologna = new Team("Bologna", 84, 82, 86);
+        Team cvenaZvezda = new Team("Cervena Zvezda", 81, 83, 84);
+        Team girona = new Team("Girona FC", 82, 81, 82);
+        Team dinamo = new Team("GNK Dinamo", 83, 83, 84);
+        Team leipzig = new Team("Leipzig", 81, 84, 82);
+        Team sBratislava = new Team("S. Bratislava", 81, 80, 85);
+        Team saizburg = new Team("Saizburg", 83, 81, 82);
+        Team shakhtar = new Team("Shakhtar", 81, 80, 86);
+        // Team spartaPraha = new Team("Sparta Praha", 82, 84, 81);
+        // Team sturmGraz = new Team("Sturm Graz", 81, 83, 80);
+        // Team stuttgart = new Team("Stuttgart", 82, 82, 83);
+        // Team youngBoys = new Team("Young Boys FC", 81, 83, 84);
+        // Team dynamoKyiv = new Team("Dynamo Kyiv", 80, 82, 80);
+        // Team malmo = new Team("Malmo", 80, 80, 80);
+        // Team qarabag = new Team("Qarabag", 80, 79, 83);
+
+        ucl.addTeam(fcBarcelona);
+        ucl.addTeam(realMadridFC);
+        ucl.addTeam(valenciaFC);
+        ucl.addTeam(bayernFC);
+        ucl.addTeam(astonVilla);
+        ucl.addTeam(psg);
+        ucl.addTeam(interMilan);
+        ucl.addTeam(arsenal);
+        ucl.addTeam(bDortmund);
+        ucl.addTeam(atleticoMadrid);
+        ucl.addTeam(benfica);
+        ucl.addTeam(feyenoord);
+        ucl.addTeam(leverkusen);
+        ucl.addTeam(lille);
+        ucl.addTeam(liverpool);
+        ucl.addTeam(psv);
+        ucl.addTeam(atalanta);
+        ucl.addTeam(brest);
+        ucl.addTeam(celtic);
+        ucl.addTeam(juventus);
+        ucl.addTeam(manCity);
+        ucl.addTeam(acMilan);
+        ucl.addTeam(monaco);
+        ucl.addTeam(sportingCP);
+        ucl.addTeam(bologna);
+        ucl.addTeam(cvenaZvezda);
+        ucl.addTeam(girona);
+        ucl.addTeam(dinamo);
+        ucl.addTeam(leipzig);
+        ucl.addTeam(sBratislava);
+        ucl.addTeam(saizburg);
+        ucl.addTeam(shakhtar);
+
+        ucl.groupStage();
+        ucl.generateKnockout();
+        ucl.roundOf16();
+        ucl.quarterFinals();
+        ucl.semiFinal();
+        ucl.finale();
+    }
+}
